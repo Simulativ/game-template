@@ -183,7 +183,7 @@ function createGround(scene, groundMaterial) {
 
 function createGroundMaterial(scene) {
   let groundMaterial = new BABYLON.StandardMaterial("groundMat", scene);
-  groundMaterial.diffuseTexture = new BABYLON.Texture("ground/ground.jpg", scene);
+  groundMaterial.diffuseTexture = new BABYLON.Texture("ground/asphalt.jpg", scene);
   groundMaterial.diffuseTexture.uScale = 4.0;
   groundMaterial.diffuseTexture.vScale = 4.0;
 
