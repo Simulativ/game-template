@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ViWorld</title>
+    <style>
+      html,
+      body {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+
+      #renderCanvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        touch-action: none;
+      }
+
+      #overlay {
+        visibility: hidden;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        z-index: 1000;
+      }
+
+      #overlay div {
+        width: 600px;
+        margin: 100px auto;
+        opacity: 0.9;
+        text-align: center;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="w3.css" media="screen" /> -->
+    <script src="/js/babylon.js"></script>
+    <script src="/js/babylonjs-loaders/babylonjs.loaders.min.js"></script>
+    <!-- <script src="/node_modules/babylonjs-inspector/babylon.inspector.bundle.js"></script> -->
+
+    <script src="/js/CharacterController.js"></script>
+    <script src="/js/testCommandControl.js"></script>
+  </head>
+
+  <body>
+    <canvas id="renderCanvas" tabindex="-1"></canvas>
+  </body>
+</html>
